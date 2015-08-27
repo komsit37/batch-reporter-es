@@ -1,7 +1,7 @@
-//var BatchReporter = require('./lib/batch-reporter');
-var BatchReporterEs = require('./lib/batch-reporter-es');
+var BatchReporter = require('./lib/batch-reporter');
+//var BatchReporterEs = require('./lib/batch-reporter-es');
 
-var batch = new BatchReporterEs('test', 'queue-test');
+var batch = new BatchReporter();
 
 batch.queued(1, 'job1', 'job1 queued');
 batch.queued(2, 'job2', 'job2 queued');
