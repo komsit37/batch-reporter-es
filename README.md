@@ -9,3 +9,9 @@ var batch = require('./../../batch-reporter-es').BatchReporter;
 
 var batch = require('./../../batch-reporter-es').BatchReporterEs;  
 * queue with elasticsearch index builtin
+
+var BatchReporterEs = require('batch-reporter-es').BatchReporterEs;
+var batch = new BatchReporterEs(CONFIG.ELASTICSEARCH_HOST, 'test', TYPE, 'info');
+
+batch.queued(id, result.term + ', ' + result.guests);
+batch.completed(id);
