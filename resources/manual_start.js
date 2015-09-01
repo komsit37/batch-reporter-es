@@ -1,4 +1,4 @@
-var BatchReporter = require('./lib/batch-reporter');
+var BatchReporter = require('./../lib/batch-reporter');
 //var BatchReporterEs = require('./lib/batch-reporter-es');
 
 var batch = new BatchReporter();
