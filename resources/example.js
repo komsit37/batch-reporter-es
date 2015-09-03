@@ -1,7 +1,7 @@
 var Promise = require('bluebird');
 var CONFIG = require('config');
 var BatchReporterEs = require('./../index').BatchReporterEs;
-var batch = new BatchReporterEs(CONFIG.ELASTICSEARCH_HOST, 'test', 'batch1');
+var batch = new BatchReporterEs(CONFIG.ELASTICSEARCH_HOST, 'test', 'batch1', 'debug', 60000);
 
 Promise.delay(0).then(function(){
     batch.queued('job1', 'queueing job1');
@@ -14,4 +14,6 @@ Promise.delay(0).then(function(){
     return batch.error('job1', 'some error log');
 }).delay(1000).then(function(){
     return batch.success();
+}).catch(function error(err){
+    console.error(err);
 });
