@@ -38,4 +38,4 @@ info: status-final start=Tue Sep 01 2015 23:15:19 GMT+0900 (JST), queued=0, proc
 
 ```
 
-![Created in Kibana](/resources/sample_dashboard.jpg?raw=true "Sample Dashboard in Kibana")
+![Created in Kibana](https://github.com/komsit37/batch-reporter-es/blob/master/resources/sample_dashboard.png "Sample Dashboard in Kibana")
